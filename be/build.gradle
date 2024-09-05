@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.android.library)
     alias(libs.plugins.jetbrains.kotlin.android)
+    id 'kotlin-kapt'
     id 'maven-publish'
 }
 
@@ -68,6 +69,26 @@ dependencies {
     implementation libs.composeRuntimeLivedata
     implementation libs.composeLifecycleViewmodel
     implementation libs.timber
+
+    //KotlinLib
+    implementation libs.kotlinStdLibJdk7
+    implementation libs.jetbrainsAnnotations
+
+    //NetworkLib
+    implementation libs.retrofit
+    implementation libs.retrofitConverterGson
+    implementation libs.retrofitConverterScalar
+    implementation libs.gson
+    implementation libs.okhttp
+    implementation libs.okttpInterceptor
+
+    //Dagger - Hilt
+    implementation libs.daggerHilt
+    implementation libs.hiltLifecycleViewModel
+    implementation libs.hiltNavCompose
+    kapt libs.hiltCompiler
+    kapt libs.hiltAndroidCompiler
+    kapt libs.hiltCompilerAndroidX
 }
 
 def getVersionName = { ->

@@ -1,14 +1,13 @@
-package com.klap.data.be.base
+package com.klap.be.base
 
-import exceptions.EndpointNotFoundException
-import cl.multicaja.klapcomercio.utilities.base.exceptions.Logger
-import cl.multicaja.klapcomercio.utilities.base.exceptions.NoConnectionException
-import cl.multicaja.klapcomercio.utilities.base.exceptions.RepositoryException
-import cl.multicaja.klapcomercio.utilities.base.exceptions.UnknownRepositoryException
+import com.klap.be.base.exceptions.EndpointNotFoundException
+import com.klap.be.base.exceptions.Logger
+import com.klap.be.base.exceptions.NoConnectionException
+import com.klap.be.base.exceptions.RepositoryException
+import com.klap.be.base.exceptions.UnknownRepositoryException
 import retrofit2.HttpException
 import java.io.IOException
 import java.net.InetAddress
-
 
 abstract class BaseRepository {
 
@@ -33,11 +32,13 @@ abstract class BaseRepository {
                         throw NoConnectionException
                     }
                 }
+
                 is HttpException -> {
                     val message = ex.localizedMessage ?: ex.message()
                     Logger.error("Network call error: Code: ${ex.code()} Message: $message")
                     throw handleCodeErrors(ex.code(), message)
                 }
+
                 is RepositoryException -> throw ex
                 else -> throw UnknownRepositoryException
             }

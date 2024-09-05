@@ -1,7 +1,6 @@
-package com.klap.data.be.base.exceptions
+package com.klap.be.base.exceptions
 
 import android.os.Build
-import androidx.viewbinding.BuildConfig
 import timber.log.Timber
 import java.util.regex.Pattern
 
@@ -12,9 +11,7 @@ object Logger {
     private const val MAX_TAG_LENGTH = 23
 
     init {
-        if (BuildConfig.DEBUG) {
-            Timber.plant(Timber.DebugTree())
-        }
+        Timber.plant(Timber.DebugTree())
     }
 
     fun verbose(message: String, throwable: Throwable? = null, tag: String? = null) {

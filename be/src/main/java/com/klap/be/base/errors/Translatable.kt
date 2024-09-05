@@ -1,4 +1,4 @@
-package com.klap.data.be.base.errors
+package com.klap.be.base.errors
 
 import android.content.res.Resources
 

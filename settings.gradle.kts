@@ -16,6 +16,14 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+        maven {
+            url =
+                uri("https://klap-dev-533267230853.d.codeartifact.us-east-2.amazonaws.com/maven/klap-dev/")
+            credentials {
+                username = "aws"
+                password = System.getenv("CODEARTIFACT_AUTH_TOKEN")
+            }
+        }
     }
 }
 

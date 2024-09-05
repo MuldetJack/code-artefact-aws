@@ -1,8 +1,8 @@
-package com.klap.data.be.data.remote
+package com.klap.be.data.remote
 
-import com.klap.data.be.data.models.ReceiptRequest
-import com.klap.data.be.data.models.ReceiptResponse
-import com.klap.data.be.data.repository.ReceiptRemote
+import com.klap.be.data.models.ReceiptRequest
+import com.klap.be.data.models.ReceiptResponse
+import com.klap.be.data.repository.ReceiptRemote
 import retrofit2.Response
 import javax.inject.Inject
 

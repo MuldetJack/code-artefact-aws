@@ -1,4 +1,4 @@
-package com.klap.data.be.base.exceptions
+package com.klap.be.base.exceptions
 
 open class RepositoryException : RuntimeException {
 

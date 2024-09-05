@@ -1,4 +1,4 @@
-package com.klap.data.be.base.exceptions
+package com.klap.be.base.exceptions
 
 private const val MESSAGE: String = "Endpoint call not found exception"
 

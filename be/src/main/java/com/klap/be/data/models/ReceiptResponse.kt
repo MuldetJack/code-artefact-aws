@@ -1,4 +1,4 @@
-package com.klap.data.be.data.models
+package com.klap.be.data.models
 
 import com.google.gson.annotations.SerializedName
 

@@ -1,7 +1,7 @@
-package com.klap.data.be.domain
+package com.klap.be.domain
 
-import com.klap.data.be.data.models.ReceiptRequest
-import com.klap.data.be.data.models.ReceiptResponse
+import com.klap.be.data.models.ReceiptRequest
+import com.klap.be.data.models.ReceiptResponse
 import retrofit2.Response
 
 interface ReceiptRepository {

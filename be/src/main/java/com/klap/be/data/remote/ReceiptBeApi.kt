@@ -1,7 +1,7 @@
-package com.klap.data.be.data.remote
+package com.klap.be.data.remote
 
-import com.klap.data.be.data.models.ReceiptRequest
-import com.klap.data.be.data.models.ReceiptResponse
+import com.klap.be.data.models.ReceiptRequest
+import com.klap.be.data.models.ReceiptResponse
 import retrofit2.Response
 import retrofit2.http.Body
 import retrofit2.http.Header

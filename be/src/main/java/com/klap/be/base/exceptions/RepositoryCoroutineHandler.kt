@@ -1,6 +1,6 @@
-package com.klap.data.be.base.exceptions
+package com.klap.be.base.exceptions
 
-import cl.multicaja.klapcomercio.utilities.base.errors.DomainError
+import com.klap.be.base.errors.DomainError
 import kotlinx.coroutines.CoroutineExceptionHandler
 import kotlin.coroutines.AbstractCoroutineContextElement
 import kotlin.coroutines.CoroutineContext
